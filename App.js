@@ -42,13 +42,9 @@ export default function App() {
   }
 
   return (
-    <NavigationContainer>
-       <Stack.Navigator initialRouteName="OrderScreen">
-
-       
-        {/* <Stack.Screen name="OrderScreen" component={OrderScreen} /> */}
-       
-      </Stack.Navigator> 
-    </NavigationContainer>
-  );
+   <NavigationContainer> 
+    <Stack.Navigator initialRouteName="HomeScreen" screenOptions={{ headerShown: false }}> 
+   <Stack.Screen name="HomeScreen" component={HomeScreen} />
+    </Stack.Navigator> 
+    </NavigationContainer> );
 }
