@@ -3,7 +3,7 @@ import { StyleSheet } from 'react-native';
 const styles = StyleSheet.create({
   container: {
     flex: 1,                     // full screen
-    backgroundColor: 'white',  // soft gray background
+    backgroundColor: 'white',    // soft gray background
     alignItems: 'center',        // center horizontally
     justifyContent: 'center', 
     padding: 20,
@@ -16,7 +16,6 @@ const styles = StyleSheet.create({
     paddingHorizontal: 20,
     alignItems: 'center', 
     justifyContent: 'center', 
-
   },
   text: {
     fontSize: 28,
@@ -24,6 +23,17 @@ const styles = StyleSheet.create({
     color: '#1e3a8a',            // dark blue text
     textAlign: 'center',
     letterSpacing: 1,
+  },
+  // 🔥 Added for splash screen
+  splashContainer: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#000',     // black background for splash
+  },
+  video: {
+    width: '100%',
+    height: '100%',
   },
 });
 
