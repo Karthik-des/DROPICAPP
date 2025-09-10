@@ -6,6 +6,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 import { Video } from 'expo-av';
 import carVideo from './assets/india3.mp4';
 import styles from './src/styles/AppCss';
+import HomeScreen from './src/screens/HomeScreen/HomeScreen';
 
 
 const Stack = createStackNavigator();
@@ -42,12 +43,12 @@ export default function App() {
 
   return (
     <NavigationContainer>
-      {/* <Stack.Navigator initialRouteName="OrderScreen">
+       <Stack.Navigator initialRouteName="OrderScreen">
 
        
-        <Stack.Screen name="OrderScreen" component={OrderScreen} />
+        {/* <Stack.Screen name="OrderScreen" component={OrderScreen} /> */}
        
-      </Stack.Navigator> */}
+      </Stack.Navigator> 
     </NavigationContainer>
   );
 }
